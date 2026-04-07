@@ -70,7 +70,7 @@ export function DanceNavbar() {
     >
       <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between">
 
-        {/* LOGO */}
+        {/* Logo */}
         <Link href="#inicio" className="flex items-center h-full">
           <div
             className={`flex items-center transition-all duration-300 ${
@@ -78,7 +78,7 @@ export function DanceNavbar() {
             }`}
           >
             <img
-              src="/logo.png"
+              src="/Logo.png"
               alt="Free Style Dance"
               className={`w-auto object-contain transition-all duration-300 ${
                 scrolled

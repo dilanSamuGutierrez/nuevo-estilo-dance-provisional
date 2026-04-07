@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Nuevo Estilo Dance" }],
   icons: {
-    icon: "/logo.png", // Favicon normal
-    apple: "/logo.png", // Icono Apple
-    shortcut: "/logo.png", // Opcional, para Windows y navegadores
+    icon: "/Logo.png", // Favicon normal
+    apple: "/Logo.png", // Icono Apple
+    shortcut: "/Logo.png", // Opcional, para Windows y navegadores
   },
   openGraph: {
     title: "Academia de danza urbana en Cali | Nuevo Estilo Dance",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "/Logo.png",
         width: 1200,
         height: 630,
         alt: "Nuevo Estilo Dance",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "Academia de danza urbana en Cali | Nuevo Estilo Dance",
     description:
       "Transforma tu mente y tu cuerpo con clases de danza urbana en Cali. Vive la experiencia.",
-    images: ["/logo.png"],
+    images: ["/Logo.png"],
   },
 };
 export default function RootLayout({
