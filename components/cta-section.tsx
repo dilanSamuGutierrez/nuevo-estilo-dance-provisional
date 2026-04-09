@@ -36,7 +36,7 @@ export function CTASection() {
           </h2>
 
           <p className="text-lg md:text-xl text-white opacity-80 mb-10 max-w-2xl mx-auto">
-            Únete a nuestra comunidad de bailarines apasionados. Contáctanos hoy y descubre cómo la danza puede cambiar tu vida.
+            Únete a nuestra comunidad de bailarines apasionados. Contáctenos hoy y descubre cómo la danza puede cambiar tu vida.
           </p>
 
           {/* BOTONES */}

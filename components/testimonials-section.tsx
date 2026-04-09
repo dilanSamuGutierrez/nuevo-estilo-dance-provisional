@@ -8,7 +8,7 @@ const testimonials = [
     name: "María García",
     role: "Estudiante avanzada",
     image: "/images/testimonial-1.jpg",
-    quote: "Felicitaciones es una fundación que genera un impacto en la comunidad de la comuna 20 siloe arte danza y prevención de spa y prevención de embarazo adolescente .",
+    quote: "Felicitaciones es una fundación que genera un impacto en la comunidad de la comuna 20 Siloé arte danza y prevención de spa y prevención de embarazo adolescente .",
     rating: 5
   },
   {

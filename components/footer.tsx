@@ -20,6 +20,7 @@ const services = [
   "Coreografías",
   "Talleres",
   "Eventos",
+  "Rutas turísticas en Siloé y comuna 20"
 ]
 
 const socialLinks = [
@@ -115,7 +116,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1" style={{ color: "#7FFFD4" }} />
                 <span className="text-sm opacity-70">
-                  Calle 12 oeste # 52 c 15<br />Cali, Colombia
+                  Calle 12A oeste # 52 c 15<br />Cali, Colombia
                 </span>
               </li>
 
@@ -123,6 +124,13 @@ export function Footer() {
                 <Phone className="w-5 h-5" style={{ color: "#7FFFD4" }} />
                 <Link href="https://wa.me/573186234832?text=Quiero%20saber%20mas%20sobre%20tu%20academia" className="text-sm opacity-70 hover:opacity-100">
                   +57 318 6234832
+                </Link>
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5" style={{ color: "#7FFFD4" }} />
+                <Link href="https://wa.me/573167611936?text=Quiero%20saber%20mas%20sobre%20tu%20academia" className="text-sm opacity-70 hover:opacity-100">
+                  +57 316 7611936
                 </Link>
               </li>
 

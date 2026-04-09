@@ -11,7 +11,7 @@ const experiences = [
     image: "/images/experience/shows-e-new.webp",
     description: "Experiencias escénicas diseñadas para impactar y entretener.",
     features: [
-      "Shows temáticos (Mario, Cazafantasmas)",
+      "Shows temáticos (Mario)",
       "Shows urbanos",
       "Flash mob",
       "Eventos especiales (15, bodas)"
