@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { motion, easeOut } from "framer-motion"
 
+// 🔹 Datos de líneas de acción
 const actionLines = [
   {
     id: "formacion",
@@ -51,7 +52,7 @@ const actionLines = [
   },
 ]
 
-// 🔥 Animaciones
+// 🔹 Animaciones framer-motion
 const container = {
   hidden: {},
   show: {
@@ -68,17 +69,19 @@ const item = {
   },
 }
 
+// 🔹 Componente de cada línea de acción
 function ActionLineCard({ line, index }) {
   const isEven = index % 2 === 0
 
   return (
     <motion.div
+      id={line.id} // <- IMPORTANTE: id para anclaje
       variants={item}
       className={`grid gap-8 py-16 md:py-24 lg:grid-cols-2 lg:gap-16 ${
         isEven ? "" : "lg:direction-rtl"
       }`}
     >
-      {/* Content */}
+      {/* Contenido */}
       <div className={`flex flex-col justify-center ${isEven ? "lg:pr-8" : "lg:pl-8 lg:order-2"}`}>
         <span className="inline-block text-[#f97f09] font-semibold text-sm uppercase tracking-wider mb-2">
           {String(index + 1).padStart(2, "0")} — {line.subtitle}
@@ -96,7 +99,7 @@ function ActionLineCard({ line, index }) {
         <div className="mt-6 h-0.5 w-16 bg-[#f97f09] transition-all duration-300 hover:w-32" />
       </div>
 
-      {/* Images */}
+      {/* Imágenes */}
       <div className={`${isEven ? "lg:order-2" : "lg:order-1"}`}>
         <ImageLayout layout={line.layout} images={line.images} title={line.title} />
       </div>
@@ -104,6 +107,7 @@ function ActionLineCard({ line, index }) {
   )
 }
 
+// 🔹 Layout de imágenes según tipo
 function ImageLayout({ layout, images, title }) {
   const baseImg =
     "object-cover transition-all duration-700 hover:scale-105 hover:brightness-110"
@@ -174,6 +178,7 @@ function ImageLayout({ layout, images, title }) {
   }
 }
 
+// 🔹 Sección completa
 export function ActionLinesSection() {
   return (
     <section className="bg-white py-16 md:py-24">
@@ -196,7 +201,7 @@ export function ActionLinesSection() {
           </h2>
         </motion.div>
 
-        {/* Content */}
+        {/* Contenido */}
         <motion.div
           variants={container}
           initial="hidden"
